@@ -1,7 +1,7 @@
 let affichage = document.getElementById("affichage");
 
 document.getElementById("reset").addEventListener("click", function () {
-    affichage.innerHTML = [];
+    affichage.innerHTML = " ";
 });
 
 document.getElementById("0").addEventListener("click", function () {
@@ -72,11 +72,13 @@ document.getElementById("division").addEventListener("click", function () {
     affichage.innerHTML += "%";
 });
 
-let result = affichage.toString();
+document.getElementById("point").addEventListener("click", function () {
+    affichage.innerHTML += ".";
+});
 
 // Effectuer le calcul:
 document.getElementById("egal").addEventListener("click", function () {
-    console.log(result);
+    let result = affichage.innerHTML;
     affichage.innerHTML = eval(result);
 });
 
