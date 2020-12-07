@@ -44,10 +44,6 @@ document.getElementById("9").addEventListener("click", function () {
     affichage.innerHTML += 9;
 });
 
-document.getElementById("4").addEventListener("click", function () {
-    affichage.innerHTML += 4;
-});
-
 document.getElementById("parantheseG").addEventListener("click", function () {
     affichage.innerHTML += "(";
 });
@@ -81,4 +77,3 @@ document.getElementById("egal").addEventListener("click", function () {
     let result = affichage.innerHTML;
     affichage.innerHTML = eval(result);
 });
-
