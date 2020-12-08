@@ -48,12 +48,18 @@ input {
     font-size: 1rem;
 }
 
+#copier button {
+    width: 100%;
+    font-size: 1rem;
+}
+
 #affichage, button {
+    background: white;
     border: solid orange 3px;
     font-size: 1.4rem;
 }
 
-button:hover {
+button:hover, #copy:hover {
     background: lightskyblue;
 }
 

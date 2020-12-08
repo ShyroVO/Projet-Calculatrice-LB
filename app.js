@@ -85,3 +85,11 @@ document.getElementById("egal").addEventListener("click", function () {
     affichage.innerHTML = eval(result);
 
 });
+
+// Copier le résultat:
+//document.getElementById("copy").addEventListener("click", function (){
+    //let resultCopy = affichage.innerHTML;
+    //resultCopy.select();
+    //document.execCommand("copy");
+    //console.log(resultCopy);
+//});
