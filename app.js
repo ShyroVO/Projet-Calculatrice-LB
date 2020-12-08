@@ -1,5 +1,7 @@
 let affichage = document.getElementById("affichage");
 
+
+
 // Reset du calcul:
 document.getElementById("reset").addEventListener("click", function () {
     affichage.innerHTML = " ";
