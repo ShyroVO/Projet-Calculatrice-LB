@@ -1,9 +1,11 @@
 let affichage = document.getElementById("affichage");
 
+// Reset du calcul:
 document.getElementById("reset").addEventListener("click", function () {
     affichage.innerHTML = " ";
 });
 
+// Ajouts chiffres:
 document.getElementById("0").addEventListener("click", function () {
     affichage.innerHTML += 0;
 });
@@ -44,6 +46,7 @@ document.getElementById("9").addEventListener("click", function () {
     affichage.innerHTML += 9;
 });
 
+// Ajouts symbols d'opération:
 document.getElementById("parantheseG").addEventListener("click", function () {
     affichage.innerHTML += "(";
 });
@@ -65,15 +68,20 @@ document.getElementById("multiplication").addEventListener("click", function () 
 });
 
 document.getElementById("division").addEventListener("click", function () {
-    affichage.innerHTML += "%";
+    affichage.innerHTML += "/";
 });
 
 document.getElementById("point").addEventListener("click", function () {
     affichage.innerHTML += ".";
 });
 
+document.getElementById("modulo").addEventListener("click", function () {
+    affichage.innerHTML += "%";
+});
+
 // Effectuer le calcul:
 document.getElementById("egal").addEventListener("click", function () {
     let result = affichage.innerHTML;
     affichage.innerHTML = eval(result);
+
 });

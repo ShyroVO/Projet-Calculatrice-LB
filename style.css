@@ -13,16 +13,18 @@ body {
     width: 20rem;
     height: auto;
     margin: 3rem auto;
-    border: solid black 1px ;
+    border: solid darkred 2px ;
+    box-shadow: darkgrey 0 0 3rem;
+    background: url("color.jpg");
+    background-size: 100% 100%;
+    border-radius: 2rem;
 }
 
 #affichage {
     width: 100%;
     height: 5rem;
-    border: solid black 1px;
     text-align: center;
     padding: 1rem;
-    font-size: 1.4rem;
 }
 
 .commande {
@@ -33,9 +35,10 @@ body {
 }
 
 button {
-    width: 25%;
-    height: 25%;
-    font-size:25px;
+    margin: 0.2rem;
+    width: 22%;
+    height: 4rem;
+    border-radius: 2rem;
 }
 
 input {
@@ -43,4 +46,21 @@ input {
     width: 100%;
     height: 60px;
     font-size: 1rem;
+}
+
+#affichage, button {
+    border: solid orange 3px;
+    font-size: 1.4rem;
+}
+
+button:hover {
+    background: lightskyblue;
+}
+
+@media screen and (max-width: 350px) {
+
+    .container {
+        width: 100%;
+    }
+
 }
